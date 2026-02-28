@@ -392,10 +392,7 @@ section {
 }
 
 .two-col-image {
-    border-radius: 12px;
-    overflow: hidden;
     box-shadow: 0 20px 60px var(--shadow);
-    aspect-ratio: 4/3;
 }
 
 .two-col-content h3 {
