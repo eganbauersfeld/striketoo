@@ -652,8 +652,9 @@ section {
 }
 
 .next-steps li {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--cream-dark);
+    line-height: 1.8;
 }
 
 .next-steps li strong {
