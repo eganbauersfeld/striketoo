@@ -790,6 +790,47 @@ section {
     }
 }
 
+/* Image sizing inside containers */
+.two-col-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.prototype-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: #f8f8f8;
+    display: block;
+}
+
+/* Name-only team cards */
+.team-card-name-only {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.team-card-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent), var(--primary-medium));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.05em;
+    margin-bottom: 1.25rem;
+}
+
 /* Utility */
 .text-center { text-align: center; }
 .mt-2 { margin-top: 2rem; }
