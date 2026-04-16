@@ -128,6 +128,123 @@
         </div>
     </section>
 
+    <!-- Prototype 2 Section -->
+    <section class="prototype-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Prototype 2: MVP Field Test</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <!-- Context -->
+            <div class="prototype-description fade-in">
+                <p>On April 7, 2026, the team conducted field testing on the indoor volleyball courts at the CU Boulder Recreation Center, presenting the MVP to Sarah Brockberg as a first functional iteration designed to validate the core mechanical interface.</p>
+                <p style="margin-bottom: 0;">The MVP introduced two parallel hand attachment strategies: a <strong style="color: var(--white);">fabric mitten</strong> (closed-hand version) and a <strong style="color: var(--white);">PLA plate</strong> (open-hand version). Both connected to the racket handle via a box-and-slot system cinched with industrial-grade Velcro. The team conducted 20 minutes of active badminton play — including serves, volleys, and overhead strikes — to evaluate structural integrity and impact on the user during repetitive striking motions.</p>
+            </div>
+
+            <!-- Performance Table -->
+            <div class="performance-table-wrapper fade-in">
+                <h3 style="color: var(--white); margin-bottom: 1.5rem; text-align: center; text-transform: uppercase; letter-spacing: 0.05em;">Performance Data</h3>
+                <table class="performance-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>Target</th>
+                            <th>Actual</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Total Weight</td>
+                            <td>&lt; 1.0 lb</td>
+                            <td>~0.6 lbs</td>
+                            <td><span class="status-badge validated">Validated</span></td>
+                        </tr>
+                        <tr>
+                            <td>Production Cost</td>
+                            <td>&lt; $5.00</td>
+                            <td>~$3.15</td>
+                            <td><span class="status-badge validated">Validated</span></td>
+                        </tr>
+                        <tr>
+                            <td>Grip Dependency</td>
+                            <td>0% Active Grip</td>
+                            <td>0% Active Grip</td>
+                            <td><span class="status-badge validated">Validated</span></td>
+                        </tr>
+                        <tr>
+                            <td>Assembly Efficiency</td>
+                            <td>Low Effort</td>
+                            <td>High (30+ min/unit)</td>
+                            <td><span class="status-badge invalidated">Invalidated</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Technical Analysis -->
+            <div class="feedback-grid stagger-children">
+                <div class="feedback-card">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path>
+                        </svg>
+                        Technical Successes
+                    </h4>
+                    <p>The box and slot system was a structural success. Once secured, the racket remained a stable extension of the arm — no rotational slippage occurred during high-velocity impacts across 20 minutes of active play.</p>
+                    <p style="margin-bottom: 0;">Weight and cost targets were both met, and the design achieved zero active grip dependency across both attachment variants.</p>
+                </div>
+                <div class="feedback-card" style="border-left-color: #e07070;">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        Technical Failures
+                    </h4>
+                    <p>The internal slots required dense 3D-printing supports that were difficult to remove, creating a significant labor bottleneck — over 30 minutes of post-processing per unit — that would make classroom-scale production impractical.</p>
+                    <p style="margin-bottom: 0;">The rigid PLA geometry caused pinching at the wrist and elbow joints, and the resulting splinting effect restricted wrist movement, making aiming and timing strikes more difficult than anticipated.</p>
+                </div>
+                <div class="feedback-card">
+                    <h4>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                        </svg>
+                        Client Feedback
+                    </h4>
+                    <p>Sarah Brockberg confirmed the value of the dual-track approach — Mitten vs. Plate — noting that versatility across hand types is essential for inclusive education.</p>
+                    <p style="margin-bottom: 0;">Her primary critiques centered on long-term wearability: joint pinching and the total lack of wrist articulation were identified as the most significant barriers to student adoption. While the design addressed the grip strength pain point, testing surfaced a second critical pain point — comfort.</p>
+                </div>
+            </div>
+
+            <!-- Iteration Roadmap -->
+            <div class="next-steps fade-in">
+                <h3>ROADMAP FOR ITERATION 2.0</h3>
+                <p style="text-align: center; margin-bottom: 2rem; color: var(--cream-dark);">Based on testing data, three critical areas have been identified for the next iteration. Weight and cost targets are validated and remain unchanged — the universal design constraint is being expanded from <em>fitting the arm</em> to <em>fitting the movement</em>.</p>
+                <ol>
+                    <li>
+                        <strong>Manufacturing Optimization</strong><br>
+                        <span style="color: var(--cream-dark);">Addressing: 30+ min/unit assembly failure.</span><br>
+                        Test alternate printing orientations and slicer settings to find a configuration that produces clean, smooth Velcro channels without long post-processing. The goal is a print-to-play state requiring minimal cleanup.
+                    </li>
+                    <li>
+                        <strong>Reshaping for Joint Clearance</strong><br>
+                        <span style="color: var(--cream-dark);">Addressing: Wrist and elbow pinching during play.</span><br>
+                        Reshape the PLA arm attachment to be more contoured near the wrist and elbow joints. By removing material where the arm needs to bend, the design can reduce interference while maintaining the rigid support the system requires.
+                    </li>
+                    <li>
+                        <strong>Universal Ergonomic Refinement</strong><br>
+                        <span style="color: var(--cream-dark);">Addressing: Awkward hand-to-racket interface across both variants.</span><br>
+                        Apply consistent ergonomic work to both the Mitten and the Plate versions to ensure a standard of comfort regardless of which attachment a student uses.
+                    </li>
+                </ol>
+                <p class="meeting-note">Next critical test: a full 40-minute wearability trial with the reshaped version 2.0 to confirm that pinching is resolved and plate geometry is sufficiently refined.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
