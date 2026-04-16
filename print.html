@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Guide | BEARGE</title>
+    <meta name="description" content="Step-by-step instructions for printing and assembling the StrikeToo adaptive racket attachment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">BEARGE</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="client.html">Client & Problem</a></li>
+                <li><a href="prototypes.html">Prototypes</a></li>
+                <li><a href="print.html" class="active">Print Guide</a></li>
+                <li><a href="team.html">Team</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="page-hero" style="min-height: 45vh;">
+        <div class="hero-background" style="background: linear-gradient(135deg, var(--primary-dark), var(--primary-medium));"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Open Source Hardware</span>
+            <h1>PRINT IT YOURSELF</h1>
+            <p class="hero-subtitle" style="max-width: 650px; margin: 1rem auto 0;">Everything you need to fabricate and assemble the StrikeToo attachment at your school — no engineering background required.</p>
+        </div>
+    </section>
+
+    <!-- STL Preview + Download -->
+    <section style="padding: 5rem 0;">
+        <div class="container">
+            <div class="two-col" style="gap: 5rem; align-items: center;">
+                <div class="two-col-image fade-in-left">
+                    <img src="assets/images/stl-render.png" alt="StrikeToo STL render — latest version" style="width:100%; height:auto; display:block; border-radius:12px; background: rgba(45,90,69,0.2);">
+                </div>
+                <div class="two-col-content fade-in-right">
+                    <h3>LATEST VERSION</h3>
+                    <p>The STL file below is the most current version of the StrikeToo PLA arm plate. It is designed to print with minimal supports using the orientation described in Step 2.</p>
+                    <p>Total print cost is approximately <strong style="color:var(--white);">$3.15</strong> in PLA filament. Assembly takes under <strong style="color:var(--white);">5 minutes</strong> after the print completes.</p>
+                    <a href="assets/files/striketoo-latest.stl" download class="btn btn-primary" style="margin-top: 0.5rem; display:inline-block;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline; vertical-align:middle; margin-right:8px;">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="7 10 12 15 17 10"></polyline>
+                            <line x1="12" y1="15" x2="12" y2="3"></line>
+                        </svg>
+                        Download STL
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Need -->
+    <section style="padding: 5rem 0; background: rgba(45, 90, 69, 0.1);">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>WHAT YOU NEED</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="materials-grid stagger-children">
+                <div class="material-card">
+                    <div class="material-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h4>FDM 3D Printer</h4>
+                    <p>Any standard FDM printer (e.g., Bambu Lab, Prusa, Ender). Build volume of at least 150 × 80 × 60 mm required.</p>
+                    <span class="material-tag">Required</span>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 8v4l3 3"></path>
+                        </svg>
+                    </div>
+                    <h4>PLA Filament</h4>
+                    <p>Standard 1.75 mm PLA. Any brand works. Approximately 40–50 g per unit. No special properties needed.</p>
+                    <span class="material-tag">Required</span>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                            <line x1="7" y1="7" x2="7.01" y2="7"></line>
+                        </svg>
+                    </div>
+                    <h4>Industrial Velcro</h4>
+                    <p>Heavy-duty hook-and-loop strip, at least 1 inch wide. Available at any hardware store. Needed for both arm strap and racket attachment.</p>
+                    <span class="material-tag">Required</span>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <h4>Neoprene Padding</h4>
+                    <p>Thin neoprene sheet or self-adhesive foam padding. Applied to inner shell for comfort. Optional but strongly recommended.</p>
+                    <span class="material-tag optional">Optional</span>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.07 4.93l-1.41 1.41M6.34 17.66l-1.41 1.41M22 12h-2M4 12H2M19.07 19.07l-1.41-1.41M6.34 6.34 4.93 4.93M12 22v-2M12 4V2"></path>
+                        </svg>
+                    </div>
+                    <h4>Slicer Software</h4>
+                    <p>Bambu Studio, PrusaSlicer, or Ultimaker Cura. Free to download. Used to prepare the STL for printing.</p>
+                    <span class="material-tag">Required</span>
+                </div>
+                <div class="material-card">
+                    <div class="material-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                            <polyline points="14 2 14 8 20 8"></polyline>
+                        </svg>
+                    </div>
+                    <h4>Scissors or Knife</h4>
+                    <p>For trimming Velcro strips to length and cutting neoprene padding to fit the shell interior.</p>
+                    <span class="material-tag">Required</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Step by Step -->
+    <section style="padding: 5rem 0;">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>STEP-BY-STEP GUIDE</h2>
+                <div class="section-divider"></div>
+                <p style="margin-top: 1.5rem;">From download to play in under an hour.</p>
+            </div>
+
+            <div class="steps-container">
+
+                <!-- Step 1 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>Download & Open the STL</h3>
+                        <p>Click the <strong style="color:var(--white);">Download STL</strong> button at the top of this page to get the latest file. Open your slicer software and import the STL by dragging it into the window or using File → Open.</p>
+                        <div class="step-tip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            The file is provided as a single-body STL. No assembly of parts is needed — it prints in one piece.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Set Print Orientation</h3>
+                        <p>Orientation is the most critical setting. Place the arm plate <strong style="color:var(--white);">flat side down</strong> on the print bed — the open channel should face upward. This orientation keeps the Velcro slots clean and eliminates the need for internal supports.</p>
+                        <div class="print-settings-grid">
+                            <div class="print-setting">
+                                <span class="setting-label">Orientation</span>
+                                <span class="setting-value">Flat side down</span>
+                            </div>
+                            <div class="print-setting">
+                                <span class="setting-label">Supports</span>
+                                <span class="setting-value">None needed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Configure Slicer Settings</h3>
+                        <p>Use the settings below for the best balance of strength, flexibility, and print speed. These have been tested and validated for PLA on a standard FDM printer.</p>
+                        <div class="print-settings-grid">
+                            <div class="print-setting">
+                                <span class="setting-label">Material</span>
+                                <span class="setting-value">PLA</span>
+                            </div>
+                            <div class="print-setting">
+                                <span class="setting-label">Layer Height</span>
+                                <span class="setting-value">0.2 mm</span>
+                            </div>
+                            <div class="print-setting">
+                                <span class="setting-label">Infill</span>
+                                <span class="setting-value">20–25%</span>
+                            </div>
+                            <div class="print-setting">
+                                <span class="setting-label">Wall Count</span>
+                                <span class="setting-value">3 perimeters</span>
+                            </div>
+                            <div class="print-setting">
+                                <span class="setting-label">Print Speed</span>
+                                <span class="setting-value">50–60 mm/s</span>
+                            </div>
+                            <div class="print-setting">
+                                <span class="setting-label">Bed Adhesion</span>
+                                <span class="setting-value">Brim (5 mm)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Print</h3>
+                        <p>Slice the model and send it to your printer. Estimated print time is <strong style="color:var(--white);">45–70 minutes</strong> depending on your printer and speed settings.</p>
+                        <div class="step-tip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            Let the bed cool fully before removing the part. Removing too early can warp the flat base.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">05</div>
+                    <div class="step-content">
+                        <h3>Remove Brim & Clean Up</h3>
+                        <p>Peel away the brim from the base of the print. If printed in the correct orientation, <strong style="color:var(--white);">no supports should need removal</strong>. Run your finger along the Velcro channels — they should be smooth and clear.</p>
+                        <div class="step-tip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            If you see any stringy artifacts inside the channel, a quick pass with a toothpick or small flat-head screwdriver will clear them out.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 6 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">06</div>
+                    <div class="step-content">
+                        <h3>Add Padding (Recommended)</h3>
+                        <p>Cut a strip of neoprene or foam padding to fit the inner shell of the plate. Press it firmly against the inner surface — if using self-adhesive foam, the backing peels off directly. This prevents skin irritation during extended play.</p>
+                    </div>
+                </div>
+
+                <!-- Step 7 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">07</div>
+                    <div class="step-content">
+                        <h3>Thread & Attach Velcro</h3>
+                        <p>Cut two strips of industrial Velcro to length — one for the arm strap and one for securing the racket handle into the box-and-slot channel. Thread the strap through the printed loops and press the hook side firmly against the loop side to test the hold.</p>
+                        <div class="step-tip">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                            Use industrial-grade (not craft-grade) Velcro. The higher holding force is important for stability during active striking motions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 8 -->
+                <div class="step-card fade-in">
+                    <div class="step-number">08</div>
+                    <div class="step-content">
+                        <h3>Insert Racket & Play</h3>
+                        <p>Slide the racket handle into the box-and-slot channel from the open end. Cinch the Velcro strap snugly around the handle. Strap the plate to the student's forearm and adjust until comfortable. The racket should feel like a stable extension of the arm — no grip required.</p>
+                        <div class="step-tip success">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                            Done! Total assembly time from completed print to play-ready is under 5 minutes.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Questions CTA -->
+    <section style="padding: 4rem 0; background: rgba(45, 90, 69, 0.15);">
+        <div class="container">
+            <div class="print-cta fade-in">
+                <h3>Questions or Issues?</h3>
+                <p>If you run into any problems with the print or assembly, reach out to Team BEARGE directly. We're happy to troubleshoot, send a pre-printed unit, or schedule a time to demonstrate assembly in person.</p>
+                <a href="mailto:teambearge@gmail.com" class="btn btn-primary">Contact the Team</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    <span>teambearge@gmail.com</span>
+                </div>
+                <div class="footer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>CU Boulder</span>
+                </div>
+                <div class="footer-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    <span>+1 (970) 461-0033</span>
+                </div>
+            </div>
+            <p class="footer-copy">&copy; 2026 Team BEARGE. CU Boulder GEEN 2400.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
