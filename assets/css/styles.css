@@ -843,26 +843,25 @@ section {
     font-size: 0.95rem;
 }
 
+.performance-table th,
+.performance-table td {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+}
+
 .performance-table th {
-    background: rgba(74, 157, 110, 0.15);
+    background: rgba(74, 157, 110, 0.25);
     color: var(--white);
-    padding: 1rem 1.5rem;
-    text-align: left;
+    padding: 0.85rem 1.5rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     font-size: 0.85rem;
-    border-bottom: 2px solid var(--accent);
 }
 
 .performance-table td {
-    padding: 1rem 1.5rem;
+    padding: 0.85rem 1.5rem;
     color: var(--cream-dark);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.performance-table tr:last-child td {
-    border-bottom: none;
 }
 
 .performance-table tr:hover td {
